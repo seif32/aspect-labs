@@ -25,4 +25,9 @@ public class UserController {
   public Optional<User> getUserById(@PathVariable Long id) {
     return userService.getUserById(id);
   }
+
+  @PostMapping
+  public User createUser(@RequestBody User user) {
+    return userService.createUser(user);
+  }
 }
