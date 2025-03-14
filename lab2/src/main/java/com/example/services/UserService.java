@@ -1,0 +1,17 @@
+package com.example.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.example.lab2.models.User;
+import com.example.lab2.repository.UserRepository;
+
+public class UserService {
+  @Autowired
+  private UserRepository userRepository;
+
+  public List<User> getAllUsers() {
+    return userRepository.findAll();
+  }
+}
