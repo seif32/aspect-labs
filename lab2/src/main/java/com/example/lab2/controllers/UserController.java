@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.lab2.models.User;
-import com.example.services.UserService;
+import com.example.lab2.services.UserService;
 
 import java.util.List;
 import java.util.Optional;

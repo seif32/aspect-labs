@@ -1,4 +1,4 @@
-package com.example.services;
+package com.example.lab2.services;
 
 import java.util.List;
 import java.util.Optional;
