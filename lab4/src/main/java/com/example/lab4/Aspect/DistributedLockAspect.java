@@ -16,7 +16,7 @@ public class DistributedLockAspect {
   @Autowired
   private RedisTemplate<String, String> redisTemplate;
 
-  @Around("@annotation(com.example.redislab.annotation.DistributedLock)")
+  @Around("@annotation(com.example.lab4.Annotation.DistributedLock)")
   public Object applyLock(ProceedingJoinPoint joinPoint) throws Throwable {
     String lockKey = "lock:" + joinPoint.getSignature().toShortString();
     boolean lockAcquired = false;
